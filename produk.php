@@ -35,7 +35,7 @@
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
 					<th>No</th>
-					<th>Id Outlet</th>
+					<th>Outlet</th>
 					<th>Jenis</th>
 					<th>Nama</th>
 					<th>Harga</th>
@@ -55,7 +55,7 @@
 			</table>
 			<br>
 			<div class="button">
-			<button type="submit" name="tambah" class="tambah">Tambah Produk</button>
+			<a href="tambah.php" class="tambah">Tambah Data</a>
 		</div>
 		</div>
 	<div class="footer">

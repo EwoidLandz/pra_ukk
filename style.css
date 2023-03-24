@@ -38,11 +38,10 @@ body{
 	padding: 30px 0px;
 }
 .button{
-	margin-left: 16.5em;
+	margin-left: 19.1em;
 }
-.button button{
-	border: none;
-	border-radius: 7px;
+.button a{
+	border-radius: 5px;
 	text-decoration: none;
 	color: black;
 	font-size: 20px;
@@ -53,4 +52,26 @@ body{
 	color: floralwhite;
 	background: darkgreen;
 	transition: 0.5s;
+}
+.button1{
+	margin-left: 14.2em;
+}
+.button1 a{
+	border-radius: 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	background: greenyellow;
+	cursor: pointer;
+}
+.button2{
+	margin-left:24.3em;
+}
+.button2 a{
+	border-radius: 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	background: greenyellow;
+	cursor: pointer;
 }

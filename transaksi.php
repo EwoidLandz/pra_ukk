@@ -11,7 +11,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Outlet - Succotash Laundry</title>
+	<title>Produk - Succotash Laundry</title>
 	<link rel="stylesheet" type="text/css" href="style.css?version=<?php echo filemtime('style.css'); ?>">
 </head>
 <body>
@@ -32,12 +32,19 @@
 		</div>
 	</div>
 		<div class="content">
+			<div class="button3">
+			<a href="tambah.php" class="tambah">Tambah Data</a>
+		</div>
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
 					<th>No</th>
-					<th>Nama</th>
-					<th>Alamat</th>
-					<th>Telpon</th>
+					<th>Nama Member</th>
+					<th>Jenis Paket</th>
+					<th>Nama Outlet</th>
+					<th>Berat Cucian</th>
+					<th>Total Bayar</th>
+					<th>Status</th>
+					<th>Transaksi</th>
 					<th>Aksi</th>
 				</tr>
 				<tr>
@@ -45,16 +52,17 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					<td>
-						<a href="edit.php">Edit</a> |
-						<a href="hapus.php">Hapus</a>
+						<a href="edit.php">Edit</a>
+						<a href="delete.php">Delete</a>
 					</td>
 				</tr>
 			</table>
 			<br>
-			<div class="button1">
-				<a href="tambah1.php" class="tambah">Tambah Outlet</a>
-			</div>
 		</div>
 	<div class="footer">
 		<h2>Succotash Laundry</h2>
