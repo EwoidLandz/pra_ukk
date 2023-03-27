@@ -11,12 +11,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Outlet - Succotash Laundry</title>
-	<link rel="stylesheet" type="text/css" href="style.css?version=<?php echo filemtime('style.css'); ?>">
+	<title>Produk - Succotash Laundry</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css?version=<?php echo filemtime('../css/style.css'); ?>">
 </head>
 <body>
 	<div class="header">
-		<div class="header-logo"><img src="img/laundry.png" width="120px" height="120px"></div>
+		<div class="header-logo"><a href="index.php"><img src="img/laundry.png" width="120px" height="120px"></a></div>
 		<div class="header-list">
 			<ul>
 				<li>
@@ -25,7 +25,7 @@
 					<a href="produk.php">PRODUK</a> |
 					<a href="pengguna.php">PENGGUNA</a> |
 					<a href="transaksi.php">TRANSAKSI</a> |
-					<a href="generate.php">GENERATE</a> |
+					<a href="lapor.php">GENERATE</a> |
 					<a href="logout.php">LOGOUT</a>
 				</li>
 			</ul>
@@ -35,9 +35,10 @@
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
 					<th>No</th>
+					<th>Outlet</th>
+					<th>Jenis</th>
 					<th>Nama</th>
-					<th>Alamat</th>
-					<th>Telpon</th>
+					<th>Harga</th>
 					<th>Aksi</th>
 				</tr>
 				<tr>
@@ -45,26 +46,27 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td></td>
 					<td>
-						<a href="edit.php">Edit</a> |
+						<a href="Edit.php">Edit</a> |
 						<a href="hapus.php">Hapus</a>
 					</td>
 				</tr>
 			</table>
 			<br>
-			<div class="button1">
-				<a href="tambah1.php" class="tambah">Tambah Outlet</a>
-			</div>
+			<div class="button">
+			<a href="tambah.php" class="tambah">Tambah Data</a>
+		</div>
 		</div>
 	<div class="footer">
 		<h2>Succotash Laundry</h2>
 		<p class="p">Alamat:</p>
-		<p></p>
+		<p>Jalan Teratai blok V</p>
 		<p class="p">Customer Care:</p>
-		<p></p>
-		<p></p>
+		<p>Telp: (0274) 8889012</p>
+		<p>Fax: (0274) 3405459</p>
 		<p class="p">Email:</p>
-		<p></p>
+		<p>info@succotashlaundry.com</p>
 	</div>
 </body>
 </html>

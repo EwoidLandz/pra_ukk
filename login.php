@@ -16,15 +16,15 @@ session_start();
 			if ($data['role'] == 'admin') {
 				$_SESSION['username'] = $username;
 				$_SESSION['role'] = 'admin';
-				header('location:admin.php');
+				header('location:../admin/index.php');
 			}elseif($data['role'] == 'kasir'){
 				$_SESSION['username'] = $username;
 				$_SESSION['role'] = 'kasir';
-				header('location:kasir.php');
+				header('location:../kasir/index.php');
 			}elseif ($data['role'] == 'owner') {
 				$_SESSION['username'] = $username;
 				$_SESSION['role'] = 'owner';
-				header('location:owner.php');
+				header('location:../owner/index.php');
 			}else{
 				header('location:login.php?pesan=gagal');
 			}

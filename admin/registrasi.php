@@ -1,4 +1,5 @@
 <?php 
+require '../function.php';
 // session_start();
 	
 // 	 if($_SESSION['role']==""){
@@ -12,7 +13,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Form Registrasi - Succotash Laundry</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css?version=<?php echo filemtime('stylesheet.css') ?>">
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css?version=<?php echo filemtime('../css/stylesheet.css') ?>">
 </head>
 <body>
 	<div class="kotak_login">
@@ -21,10 +22,7 @@
 		<form action="" method="post">
 			<ul>
 				<li>
-					<input type="text" name="name" class="form_login" placeholder="Nama Lengkap" required>
-				</li>
-				<li>
-					<input type="text" name="username" class="form_login" required placeholder="Username">
+					<input type="text" name="nama" class="form_login" placeholder="Nama Lengkap" required>
 				</li>
 				<li>
 					<input type="text" name="alamat" class="form_login" required placeholder="Alamat">

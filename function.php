@@ -10,4 +10,17 @@
 		};
 		return $rows;
 	}
+
+	function register($post){
+		global $conn;
+
+		$nama = htmlspecialchars($post['nama']);
+		$alamat = htmlspecialchars($post['alamat']);
+		$jenis_kelamin = htmlspecialchars($post['jenis_kelamin']);
+		$tlp = htmlspecialchars($post['tlp']);
+
+		$query = "INSERT INTO member VALUES('','$nama','$alamat','$jenis_kelamin','$tlp')";
+		mysqli_query($conn,$query);
+		return mysqli_affected_rows($conn);
+	}
 ?>
