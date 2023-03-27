@@ -52,10 +52,7 @@ body{
 	color: floralwhite;
 	background: darkgreen;
 	transition: 0.5s;
-}
-.button1{
-	margin-left: 14.2em;
-}
+}	
 .button1 a{
 	border-radius: 5px;
 	text-decoration: none;

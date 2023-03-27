@@ -23,4 +23,32 @@
 		mysqli_query($conn,$query);
 		return mysqli_affected_rows($conn);
 	}
+
+	function tambah1($post){
+		global $conn;
+
+		$nama = htmlspecialchars($post['nama']);
+		$alamat = htmlspecialchars($post['alamat']);
+		$tlp = htmlspecialchars($post['tlp']);
+
+		$query = "INSERT INTO outlet VALUES('','$nama','$alamat','$tlp')";
+		mysqli_query($conn,$query);
+		return mysqli_affected_rows($conn);
+	}
+	function edit1($post){
+		global $conn;
+
+		$nama = htmlspecialchars($post['nama']);
+		$alamat = htmlspecialchars($post['alamat']);
+		$tlp = htmlspecialchars($post['tlp']);
+
+		$query = "UPDATE outlet SET
+					nama = '$nama',
+					alamat = '$alamat',
+					tlp = '$tlp'
+					WHERE id = $id
+		";
+		mysqli_query($conn,$query);
+		return mysqli_affected_rows($conn);
+	}
 ?>

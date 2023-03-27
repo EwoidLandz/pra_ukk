@@ -1,9 +1,13 @@
-<?php 
+<?php
+
+require '../function.php'; 
 // session_start();
 	
 // 	 if($_SESSION['role']==""){
 //         header("location:login.php?pesan=gagal");
     // }
+
+$outlet = mysqli_query($conn,"SELECT * FROM outlet");
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +36,9 @@
 		</div>
 	</div>
 		<div class="content">
+			<div class="button1">
+				<a href="tambah1.php" class="tambah">Tambah Outlet</a>
+			</div>
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
 					<th>No</th>
@@ -40,21 +47,22 @@
 					<th>Telpon</th>
 					<th>Aksi</th>
 				</tr>
+				<?php $i = 1; ?>
+				<?php foreach($outlet as $row) : ?>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><?php echo $i; ?></td>
+					<td><?php echo $row['nama']; ?></td>
+					<td><?php echo $row['alamat']; ?></td>
+					<td><?php echo $row['tlp']; ?></td>
 					<td>
-						<a href="edit.php">Edit</a> |
-						<a href="hapus.php">Hapus</a>
+						<a href="edit1.php?id=<?php echo $row["id"]; ?>">Edit</a> |
+						<a href="hapus.php?id=<?php echo $row["id"]; ?>">Hapus</a>
 					</td>
 				</tr>
+				<?php $i++; ?>
+			<?php endforeach; ?>
 			</table>
 			<br>
-			<div class="button1">
-				<a href="tambah1.php" class="tambah">Tambah Outlet</a>
-			</div>
 		</div>
 	<div class="footer">
 		<h2>Succotash Laundry</h2>
